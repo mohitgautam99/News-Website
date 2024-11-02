@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsAppp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <h1>News Application</h1> -->
+    <nav>
+        <div class="main_nav container flex">
+            <a href="#" class="Logo">
+                <!-- <img src="/News_Application/News/Logo.png" alt="news" width="50px" height="50px"> -->
+                <img src="/News Logo.png" alt="news" width="60px" height="60px">
+            </a>
+            <div class="nav_links">
+                <ul class="flex">
+                    <li class="nav_item" id="IPL" onclick="mohit('ipl')">IPL</li>
+                    <li class="nav_item" id="finance" onclick="mohit('finance')">Finance</li>
+                    <li class="nav_item" id="politics" onclick="mohit('politics')">Politics</li>
+                    <!-- <li class="nav_item" id="">Politics</li> -->
+                </ul>
+            </div>
+            <div class="nav-search flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Type here">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <div class="card-container container  flex " id="card-container">
+
+
+
+
+
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is the tittle mohit </h3>
+                <h6 class="news-source" id="news-source">End Gadg23/08/2023</h6>
+                <p class="News-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+                    totam ex quis nostrum iure.
+                    Eos excepturi perspiciatis recusandae dolorum quibusdam.
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
